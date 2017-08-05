@@ -16,6 +16,7 @@
 		4DF1AFC81F342A18005FF03C /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFC71F342A18005FF03C /* TapViewController.m */; };
 		4DF1AFCB1F34430F005FF03C /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFCA1F34430F005FF03C /* PinchViewController.m */; };
 		4DF1AFCE1F3460DD005FF03C /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */; };
+		4DF1AFF41F354BEE005FF03C /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFF31F354BEE005FF03C /* RotationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4DF1AFCA1F34430F005FF03C /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
 		4DF1AFCC1F3460DD005FF03C /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
 		4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		4DF1AFF21F354BEE005FF03C /* RotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
+		4DF1AFF31F354BEE005FF03C /* RotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				4DF1AFAF1F342102005FF03C /* Main.storyboard */,
+				4DF1AFF21F354BEE005FF03C /* RotationViewController.h */,
+				4DF1AFF31F354BEE005FF03C /* RotationViewController.m */,
 				4DF1AFCC1F3460DD005FF03C /* SwipeViewController.h */,
 				4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */,
 				4DF1AFC91F34430F005FF03C /* PinchViewController.h */,
@@ -168,6 +173,7 @@
 				4DF1AFC51F342A0C005FF03C /* PanViewController.m in Sources */,
 				4DF1AFAB1F342102005FF03C /* AppDelegate.m in Sources */,
 				4DF1AFCB1F34430F005FF03C /* PinchViewController.m in Sources */,
+				4DF1AFF41F354BEE005FF03C /* RotationViewController.m in Sources */,
 				4DF1AFCE1F3460DD005FF03C /* SwipeViewController.m in Sources */,
 				4DF1AFC81F342A18005FF03C /* TapViewController.m in Sources */,
 				4DF1AFA81F342102005FF03C /* main.m in Sources */,
@@ -327,6 +333,7 @@
 				4DF1AFBC1F342102005FF03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

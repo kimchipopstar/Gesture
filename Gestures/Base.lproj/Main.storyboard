@@ -23,6 +23,7 @@
                         <segue destination="kdh-ZE-E5t" kind="relationship" relationship="viewControllers" id="kpm-yS-y5U"/>
                         <segue destination="T8c-LN-NJ5" kind="relationship" relationship="viewControllers" id="BRy-yh-hWJ"/>
                         <segue destination="mh8-Q7-38t" kind="relationship" relationship="viewControllers" id="AV1-gR-bBP"/>
+                        <segue destination="piZ-SG-GuN" kind="relationship" relationship="viewControllers" id="YL2-Zg-2ST"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayF-JG-DLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,11 +123,56 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="1526.9865067466269"/>
         </scene>
+        <!--Rotation-->
+        <scene sceneID="1Rd-da-FRB">
+            <objects>
+                <viewController id="piZ-SG-GuN" customClass="RotationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bBk-9g-ARk"/>
+                        <viewControllerLayoutGuide type="bottom" id="NKH-6S-scn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hnM-xz-rgR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V0-qM-Y2R">
+                                <rect key="frame" x="127" y="273" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CvA-aB-YhM"/>
+                                    <constraint firstAttribute="height" constant="120" id="GED-Gb-okB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerX" secondItem="hnM-xz-rgR" secondAttribute="centerX" id="4Pq-Io-rBq"/>
+                            <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerY" secondItem="hnM-xz-rgR" secondAttribute="centerY" id="WqD-Gi-Y32"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="frh-ns-B9W" appends="YES" id="FUV-cq-QIn"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" image="item5" id="5T2-oF-x8g"/>
+                    <connections>
+                        <outlet property="redView" destination="7V0-qM-Y2R" id="7Tf-op-FVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMo-B8-sr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="frh-ns-B9W">
+                    <connections>
+                        <action selector="rotated:" destination="piZ-SG-GuN" id="hWf-XB-a9e"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="809" y="2247"/>
+        </scene>
     </scenes>
     <resources>
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
+        <image name="item5" width="30" height="30"/>
     </resources>
 </document>
