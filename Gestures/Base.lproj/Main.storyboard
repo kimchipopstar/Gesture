@@ -150,6 +150,9 @@
                             <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerX" secondItem="hnM-xz-rgR" secondAttribute="centerX" id="4Pq-Io-rBq"/>
                             <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerY" secondItem="hnM-xz-rgR" secondAttribute="centerY" id="WqD-Gi-Y32"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vfj-Ey-UdC" appends="YES" id="ECa-zr-O6m"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rotation" image="item5" id="5T2-oF-x8g"/>
                     <connections>
@@ -157,6 +160,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMo-B8-sr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="vfj-Ey-UdC">
+                    <connections>
+                        <action selector="redRotating:" destination="piZ-SG-GuN" id="ZQV-Re-CGd"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="809" y="2247"/>
         </scene>

@@ -25,11 +25,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)rotated:(UIRotationGestureRecognizer *)sender {
-    
+- (IBAction)redRotating:(UIRotationGestureRecognizer *)sender {
     sender.view.transform = CGAffineTransformRotate(sender.view.transform, sender.rotation);
-    
 }
+
 
 
 @end
