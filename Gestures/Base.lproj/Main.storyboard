@@ -24,6 +24,7 @@
                         <segue destination="T8c-LN-NJ5" kind="relationship" relationship="viewControllers" id="BRy-yh-hWJ"/>
                         <segue destination="mh8-Q7-38t" kind="relationship" relationship="viewControllers" id="AV1-gR-bBP"/>
                         <segue destination="piZ-SG-GuN" kind="relationship" relationship="viewControllers" id="YL2-Zg-2ST"/>
+                        <segue destination="WaB-kb-txc" kind="relationship" relationship="viewControllers" id="isv-Rm-ii3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayF-JG-DLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,9 +150,6 @@
                             <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerX" secondItem="hnM-xz-rgR" secondAttribute="centerX" id="4Pq-Io-rBq"/>
                             <constraint firstItem="7V0-qM-Y2R" firstAttribute="centerY" secondItem="hnM-xz-rgR" secondAttribute="centerY" id="WqD-Gi-Y32"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="frh-ns-B9W" appends="YES" id="FUV-cq-QIn"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rotation" image="item5" id="5T2-oF-x8g"/>
                     <connections>
@@ -159,13 +157,27 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMo-B8-sr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <rotationGestureRecognizer id="frh-ns-B9W">
-                    <connections>
-                        <action selector="rotated:" destination="piZ-SG-GuN" id="hWf-XB-a9e"/>
-                    </connections>
-                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="809" y="2247"/>
+        </scene>
+        <!--Edge-->
+        <scene sceneID="jo4-0o-VXJ">
+            <objects>
+                <viewController id="WaB-kb-txc" customClass="EdgeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="70c-Dz-Hys"/>
+                        <viewControllerLayoutGuide type="bottom" id="qXF-G1-HpW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PpL-4U-ayc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edge" image="item6" id="pWd-u2-Pvt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awg-mD-20b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="2947"/>
         </scene>
     </scenes>
     <resources>
@@ -174,5 +186,6 @@
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
         <image name="item5" width="30" height="30"/>
+        <image name="item6" width="30" height="30"/>
     </resources>
 </document>
