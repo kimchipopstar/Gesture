@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		4DF1AFA81F342102005FF03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFA71F342102005FF03C /* main.m */; };
 		4DF1AFAB1F342102005FF03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFAA1F342102005FF03C /* AppDelegate.m */; };
-		4DF1AFAE1F342102005FF03C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFAD1F342102005FF03C /* ViewController.m */; };
 		4DF1AFB11F342102005FF03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1AFAF1F342102005FF03C /* Main.storyboard */; };
 		4DF1AFB31F342102005FF03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1AFB21F342102005FF03C /* Assets.xcassets */; };
 		4DF1AFB61F342102005FF03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1AFB41F342102005FF03C /* LaunchScreen.storyboard */; };
+		4DF1AFC51F342A0C005FF03C /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFC41F342A0C005FF03C /* PanViewController.m */; };
+		4DF1AFC81F342A18005FF03C /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFC71F342A18005FF03C /* TapViewController.m */; };
+		4DF1AFCB1F34430F005FF03C /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFCA1F34430F005FF03C /* PinchViewController.m */; };
+		4DF1AFCE1F3460DD005FF03C /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,18 @@
 		4DF1AFA71F342102005FF03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DF1AFA91F342102005FF03C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DF1AFAA1F342102005FF03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DF1AFAC1F342102005FF03C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4DF1AFAD1F342102005FF03C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4DF1AFB01F342102005FF03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DF1AFB21F342102005FF03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DF1AFB51F342102005FF03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DF1AFB71F342102005FF03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF1AFC31F342A0C005FF03C /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanViewController.h; path = ../PanViewController.h; sourceTree = "<group>"; };
+		4DF1AFC41F342A0C005FF03C /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanViewController.m; path = ../PanViewController.m; sourceTree = "<group>"; };
+		4DF1AFC61F342A18005FF03C /* TapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapViewController.h; path = ../TapViewController.h; sourceTree = "<group>"; };
+		4DF1AFC71F342A18005FF03C /* TapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapViewController.m; path = ../TapViewController.m; sourceTree = "<group>"; };
+		4DF1AFC91F34430F005FF03C /* PinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		4DF1AFCA1F34430F005FF03C /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		4DF1AFCC1F3460DD005FF03C /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +67,15 @@
 		4DF1AFA51F342102005FF03C /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
-				4DF1AFA91F342102005FF03C /* AppDelegate.h */,
-				4DF1AFAA1F342102005FF03C /* AppDelegate.m */,
-				4DF1AFAC1F342102005FF03C /* ViewController.h */,
-				4DF1AFAD1F342102005FF03C /* ViewController.m */,
 				4DF1AFAF1F342102005FF03C /* Main.storyboard */,
-				4DF1AFB21F342102005FF03C /* Assets.xcassets */,
-				4DF1AFB41F342102005FF03C /* LaunchScreen.storyboard */,
-				4DF1AFB71F342102005FF03C /* Info.plist */,
+				4DF1AFCC1F3460DD005FF03C /* SwipeViewController.h */,
+				4DF1AFCD1F3460DD005FF03C /* SwipeViewController.m */,
+				4DF1AFC91F34430F005FF03C /* PinchViewController.h */,
+				4DF1AFCA1F34430F005FF03C /* PinchViewController.m */,
+				4DF1AFC31F342A0C005FF03C /* PanViewController.h */,
+				4DF1AFC41F342A0C005FF03C /* PanViewController.m */,
+				4DF1AFC61F342A18005FF03C /* TapViewController.h */,
+				4DF1AFC71F342A18005FF03C /* TapViewController.m */,
 				4DF1AFA61F342102005FF03C /* Supporting Files */,
 			);
 			path = Gestures;
@@ -74,6 +84,11 @@
 		4DF1AFA61F342102005FF03C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DF1AFB21F342102005FF03C /* Assets.xcassets */,
+				4DF1AFA91F342102005FF03C /* AppDelegate.h */,
+				4DF1AFAA1F342102005FF03C /* AppDelegate.m */,
+				4DF1AFB71F342102005FF03C /* Info.plist */,
+				4DF1AFB41F342102005FF03C /* LaunchScreen.storyboard */,
 				4DF1AFA71F342102005FF03C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF1AFAE1F342102005FF03C /* ViewController.m in Sources */,
+				4DF1AFC51F342A0C005FF03C /* PanViewController.m in Sources */,
 				4DF1AFAB1F342102005FF03C /* AppDelegate.m in Sources */,
+				4DF1AFCB1F34430F005FF03C /* PinchViewController.m in Sources */,
+				4DF1AFCE1F3460DD005FF03C /* SwipeViewController.m in Sources */,
+				4DF1AFC81F342A18005FF03C /* TapViewController.m in Sources */,
 				4DF1AFA81F342102005FF03C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

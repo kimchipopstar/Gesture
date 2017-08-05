@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PanViewController.h
 //  Gestures
 //
 //  Created by Jaewon Kim on 2017-08-03.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PanViewController : UIViewController
 
 @end
-
